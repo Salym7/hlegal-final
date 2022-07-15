@@ -1,0 +1,21 @@
+.slide {
+  @media (max-width: 992px) {
+    .carousel-item-flex {
+      flex-direction: column;
+    }
+    &__img-avatar {
+      width: 100%;
+      height: 500px;
+
+      img {
+        width: 100%;
+
+      }
+    }
+  }
+  @media (max-width: 450px) {
+    &__title {
+      font-size: $font-xl;
+    }
+  }
+}

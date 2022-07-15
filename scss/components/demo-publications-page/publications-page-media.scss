@@ -1,0 +1,15 @@
+.recommended {
+
+
+}
+
+.spaces {
+  @media (max-width: 1024px) and (min-width: 768px) {
+    padding-top: 280px;
+
+  }
+  @media (max-width: 500px) {
+    padding-top: 140px;
+
+  }
+}

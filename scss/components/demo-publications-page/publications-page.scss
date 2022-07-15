@@ -1,0 +1,41 @@
+.spaces {
+  padding-top: 176px;
+}
+
+.recommended {
+  &__top-btn {
+    gap: 2px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 42px;
+    width: 233px;
+    background: $color-gray-separator;
+    border: 2px solid $color-gray-separator;
+    border-radius: $default-border-radius;
+    margin: 0 auto 30px;
+
+    input[name=btn] {
+      display: none;
+    }
+
+    span {
+      cursor: pointer;
+      font-weight: 700;
+      padding: 6px 27px;
+      border-radius: 8px;
+      display: inline-block;
+      color: $color-main;
+    }
+
+    input[name="btn"]:checked + span {
+      background-color: $color-white;
+    }
+  }
+
+  &__btn {
+    padding-top: 30px;
+    text-align: center;
+  }
+
+}

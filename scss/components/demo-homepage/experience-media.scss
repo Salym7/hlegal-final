@@ -1,0 +1,49 @@
+.experience {
+  @media (max-width: 992px) {
+    &__flex {
+      flex-direction: column;
+      gap: 40px;
+      overflow: hidden;
+    }
+    &__col-left {
+      width: 100%;
+      padding: 0;
+      flex: 1 1 100%;
+      border-right: 0;
+      overflow-y: scroll;
+      position: relative;
+      gap: 30px;
+    }
+    &__col-left::-webkit-scrollbar {
+      width: 0;
+    }
+    &__col-right {
+      padding-top: 56px;
+      border-top: 4px solid $color-gray-separator;
+      flex: 1 1 100%;
+      justify-content: flex-start;
+      min-height: 10px;
+    }
+    &__col-left-inner {
+      gap: 30px;
+    }
+  }
+  @media (max-width: 450px) {
+    &__inner {
+      gap: 30px;
+
+    }
+    .nav-link {
+      font-size: $font-xl;
+    }
+    &__title {
+      font-size: 20px;
+    }
+    &__col-right {
+      padding-top: 26px;
+    }
+    &__flex {
+      gap: 10px;
+    }
+  }
+}

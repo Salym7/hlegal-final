@@ -1,0 +1,19 @@
+.entry {
+  @media (max-width: 1024px) and (min-width: 768px) {
+    padding-top: 280px;
+  }
+  @media (max-width: 768px) {
+    &__list {
+      width: 100%;
+    }
+    &__list:not(:last-child) {
+      margin-bottom: 30px;
+    }
+    &__group {
+      gap: 0;
+    }
+  }
+  @media (max-width: 450px) {
+    padding-top: 140px;
+  }
+}

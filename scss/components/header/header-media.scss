@@ -1,0 +1,147 @@
+.header {
+
+  @media (min-width: 1024px) {
+    &__top-content {
+      justify-content: flex-end;
+    }
+  }
+
+  @media (max-width: 1024px) and (min-width: 767px) {
+
+    .navbar .container-lg {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+  }
+
+  @media (max-width: 1024px) {
+    &__top-content {
+      position: static;
+      margin-bottom: 30px;
+    }
+  }
+
+
+  @media (max-width: 767px) {
+    & {
+      padding-top: 0;
+    }
+
+    .navbar {
+      padding-top: 10px;
+
+      &-brand {
+        margin: 0;
+      }
+
+      &-toggler {
+        $icon-size: 35px;
+        border: none;
+        padding: 5px;
+
+        &:hover {
+          background-color: #e6e6f02b;
+          transition: .3s;
+        }
+
+        &:focus {
+          box-shadow: none;
+          background-color: #e6e6f02b;
+          transition: .3s;
+        }
+
+
+        svg {
+          fill: $color-white;
+          width: $icon-size;
+          height: $icon-size;
+        }
+
+      }
+
+      .navbar-collapse {
+        background-color: $color-white;
+        padding: 20px;
+        border-radius: $default-border-radius;
+        margin-top: 20px;
+
+
+        .nav-link {
+          padding: 7px 0;
+          text-align: center;
+          border-radius: $default-border-radius;
+          background-color: $color-grey-bg;
+          color: $color-active-regular;
+          font-weight: $font-bold;
+          font-size: $font-lg;
+
+          &.active {
+            border: none;
+            color: $color-accent;
+          }
+
+          &:hover,
+          &:active,
+          &:focus {
+            background-color: $color-gray-separator;
+            transition: .3s;
+          }
+        }
+      }
+
+
+    }
+
+
+    &__top {
+      background-color: rgba(245, 245, 250, 0.2);
+
+      .container-lg {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      &-content {
+        margin: 0;
+        justify-content: space-between;
+
+        & > div:not(:last-child):after {
+          content: unset;
+        }
+      }
+
+      &-address, &-social {
+        display: none;
+      }
+
+      &-phone {
+        margin: 0 !important;
+      }
+    }
+
+  }
+  @media (max-width: 500px) {
+
+    .logo-block {
+      display: flex;
+      gap: 4px;
+      align-items: center;
+
+      img {
+        height: 32px;
+      }
+
+      svg {
+        height: 26px;
+      }
+
+      span {
+        margin-top: -6px;
+        font-size: 20px;
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,60 @@
+.entry {
+  padding-top: 176px;
+
+  &__inner {
+    color: $color-white;
+  }
+
+  &__top {
+    text-align: center;
+    padding-bottom: 60px;
+    border-bottom: 4px solid $color-gray-separator;
+
+    p {
+      margin-bottom: 28px;
+    }
+  }
+
+  &__services {
+    padding: 30px 0 60px;
+  }
+
+  &__services-title {
+    font-size: $font-lgg;
+    font-weight: $font-bold;
+    margin-bottom: 30px;
+  }
+
+  &__group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+
+  &__list {
+    width: calc(50% - 30px);
+    margin-bottom: 0;
+    padding-left: 18px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  &__item {
+    list-style-type: none;
+    position: relative;
+  }
+
+  &__item:before {
+    position: absolute;
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: $color-accent;
+    top: 11px;
+    left: -18px;
+    border-radius: 50%;
+  }
+
+}

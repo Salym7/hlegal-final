@@ -1,0 +1,95 @@
+.team {
+  padding: 176px 0 60px;
+
+  &__group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+
+  &__box {
+    flex: 1 1 27%;
+  }
+
+  &__box-ava {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+
+  }
+
+  .img-1 {
+    background-image: url("../assets/team-1.jpg");
+  }
+
+  .img-2 {
+    background-image: url("../assets/team-2.jpg");
+  }
+
+  .img-3 {
+    background-image: url("../assets/team-3.jpg");
+  }
+
+  .img-4 {
+    background-image: url("../assets/team-4.jpg");
+  }
+
+  .img-5 {
+    background-image: url("../assets/team-5.jpg");
+  }
+
+  .img-6 {
+    background-image: url("../assets/team-6.jpg");
+  }
+
+  .main-title {
+    margin: 0 auto;
+    max-width: 1360px;
+    margin-bottom: 60px;
+  }
+
+  &__name {
+    font-weight: $font-bold;
+    color: $color-main;
+    margin-bottom: 0;
+  }
+
+  &__post {
+    color: $color-gray-text;
+  }
+
+
+  &__name span {
+    display: flex;
+    align-items: center;
+    height: 32px;
+    width: 32px;
+    background: $color-grey-bg;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  &__link:hover .team__name {
+    color: $color-accent;
+
+  }
+
+  &__link {
+    position: relative;
+  }
+
+  &__link svg {
+    position: absolute;
+    right: 0;
+    top: 5px;
+  }
+
+  &__link:hover svg path {
+    stroke: $color-accent;
+  }
+}

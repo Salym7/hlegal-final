@@ -1,0 +1,77 @@
+$main-font: 'Montserrat', sans-serif;
+
+$font-xxl: 38px;
+$font-xl: 30px;
+$font-lgg: 22px;
+$font-lg: 19px;
+$font-md: 18px;
+$font-sm: 16px;
+$font-xm: 14px;
+
+$font-normal: 400;
+$font-bold: 700;
+
+$default-border-radius: 12px;
+
+$color-white: #ffffff;
+
+$color-main: #323264;
+$color-alt: #46466E;
+$color-sof: #686887;
+$color-accent: #F0145A;
+$color-active-regular: #24A3FF;
+$color-active-hover: #0085FF;
+$color-active-active: #006CCF;
+$color-grey-bg: #F5F5FA;
+$color-grey-alt: #EDEDF7;
+$color-gray-text: #B3B3BA;
+$color-gray-separator: #E6E6F0;
+$color-gradient: linear-gradient(128.63deg, #323264 0%, #323264 73.96%, #A54B5F 100%);
+$color-gradient-soft: linear-gradient(42.01deg, #323264 14.33%, #323264 51.39%, #7A425E 87.53%);
+$color-gradient-red: linear-gradient(323.35deg, #F0145A 6.7%, #693264 70.36%);
+$color-gradient-supersoft: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+$color-gradient-red-text: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+$color-gradient-title: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+  --bs-gutter-x: 60px;
+}
+
+
+.form-control:focus {
+  color: $color-active-regular;
+  box-shadow: none;
+}
+
+
+$mobile-menu-item-color: #24A3FF;
+$mobile-menu-item-bg-color: #F5F5FA;
+$mobile-menu-item-active-bg-color: #E6E6F0;
+
+
+$main-gradient: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+$gradient-shadow-height: 10px;
+
+.nav-link {
+  --bs-nav-link-color: #{$color-white};
+  --bs-navbar-active-color: #{$color-accent};
+  --bs-navbar-nav-link-padding-x: 0;
+  --bs-nav-link-hover-color: #{$color-accent};
+  --bs-nav-link-padding-y: 0;
+  --bs-nav-link-padding-x: 0
+}
+
+.bg-gradient {
+  --bs-gradient: #{$main-gradient}
+}
+
+.nav-link.active {
+  --bs-nav-pills-link-active-color: #B3B3BA;
+  --bs-nav-pills-link-active-bg: none;
+}
+
+.modal {
+  --bs-modal-width: 650px
+}
+

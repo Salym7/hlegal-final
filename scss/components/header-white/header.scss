@@ -1,0 +1,126 @@
+.header {
+  position: absolute;
+  padding: 50px 0 60px;
+  width: 100%;
+  z-index: 1;
+
+  &-content-wrapper {
+    position: relative;
+  }
+
+  &__top {
+    font-size: $font-sm;
+
+    .container-lg {
+      position: relative;
+    }
+
+    &-social:hover svg path {
+      fill: $color-accent;
+      transition: 0.5s;
+    }
+
+    &-content {
+      position: absolute;
+      z-index: 1;
+      right: 32px;
+      top: -16px;
+
+      & > div:not(:last-child) {
+        margin-right: 6px;
+
+        &:after {
+          content: '';
+          display: inline-block;
+          width: 7px;
+          height: 7px;
+          background-color: $color-white;
+          border-radius: 50%;
+          margin-left: 3px;
+        }
+      }
+    }
+
+    &-lang {
+
+      input[name="lang"] {
+        display: none;
+      }
+
+      input[name="lang"]:checked + span {
+        background-color: $color-accent;
+        color: $color-white;
+      }
+
+      label span {
+        cursor: pointer;
+        font-weight: $font-bold;
+        color: $color-gray-text;
+        padding: 5px 7px;
+        border-radius: 8px;
+        display: inline-block;
+      }
+
+    }
+
+    &-address,
+    &-phone {
+      a {
+        color: $color-gray-text;
+        font-size: $font-sm;
+        font-weight: $font-normal;
+        text-decoration: none;
+      }
+    }
+
+    &-phone a {
+      font-weight: $font-bold;
+    }
+
+  }
+
+  .navbar {
+
+    &-brand {
+      margin-top: -20px;
+      font-size: 36px;
+      color: $color-main;
+
+      .logo-block {
+        display: flex;
+        gap: 4px;
+
+        span {
+          margin-top: -5px;
+
+        }
+      }
+    }
+
+
+    &-nav {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      gap: 15px;
+      padding-top: 20px;
+    }
+
+
+    .nav-link {
+      font-weight: $font-bold;
+      padding-bottom: 4px;
+      color: $color-active-regular;
+
+      &.active {
+        border-bottom: 2px solid;
+        color: $color-accent;
+      }
+
+      &:hover {
+        border-bottom: 2px solid;
+        transition: .3s;
+      }
+    }
+  }
+}

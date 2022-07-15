@@ -1,0 +1,34 @@
+.team {
+  @media (max-width: 1600px) {
+    .main-title {
+      max-width: 1080px;
+    }
+  }
+  @media (max-width: 1024px) {
+    .main-title {
+      max-width: 664px;
+    }
+  }
+  @media (max-width: 992px) {
+    &__box {
+      flex: 1 1 40%;
+    }
+  }
+  @media (max-width: 1024px) and (min-width: 768px) {
+    & {
+      padding-top: 280px;
+    }
+  }
+  @media (max-width: 576px) {
+    &__box {
+      flex: 1 1 100%;
+    }
+  }
+  @media (max-width: 450px) {
+    &__box-ava {
+      height: 300px;
+    }
+    padding-top: 140px;
+  }
+
+}

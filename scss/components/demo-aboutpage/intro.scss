@@ -1,0 +1,32 @@
+.intro {
+  padding-top: 176px;
+
+  .about__advantages {
+    border-left: 4px solid $color-gray-separator;
+
+    .main-title {
+      margin-bottom: 0;
+    }
+  }
+
+  &__list {
+    margin-bottom: 0;
+  }
+
+  &__item {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+
+    column-gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  &__item-text {
+    width: 100%;
+  }
+}

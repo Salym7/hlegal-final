@@ -1,0 +1,24 @@
+.banner {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-image: url("../assets/Symbol.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  position: relative;
+
+  h1 {
+    color: $color-white;
+    font-size: $font-xxl;
+    font-weight: $font-bold;
+  }
+
+  &__scroll {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

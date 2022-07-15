@@ -1,0 +1,70 @@
+.trust {
+
+  &__title {
+    text-transform: uppercase;
+    font-size: $font-xm;
+    color: $color-main;
+    font-weight: $font-bold;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__company {
+    height: 120px;
+
+    &-1 {
+      background: #1C4280;
+    }
+
+    &-2 {
+      background: #143646;
+    }
+
+    &-3 {
+      background: #F48B30;
+    }
+
+    &-4 {
+      background: #9E4DC3;
+    }
+
+    &-5 {
+      background: #FD9339;
+    }
+
+    &-6 {
+      background: #E2E2E4;
+    }
+
+    &-7 {
+      background: #C71C36;
+    }
+
+    &-8 {
+      background: #DCF3F9;
+    }
+
+    &-9 {
+      background: #EAEAEA;
+    }
+
+    &-10 {
+      background: #282240;
+    }
+
+    &-11 {
+      background: #1D4568;
+    }
+
+    &-12 {
+      background: #000000;
+    }
+
+
+  }
+
+  &__flex {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+}

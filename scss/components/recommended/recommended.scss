@@ -1,0 +1,99 @@
+.recommended {
+  background: $color-grey-bg;
+
+  padding-top: 30px;
+
+  &__public {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    &-box {
+      flex: 1 1 30%;
+      overflow: hidden;
+      border-radius: 12px;
+      background: $color-white;
+    }
+
+    &-container {
+      padding: 30px;
+    }
+
+    &-img {
+      width: 100%;
+      height: 200px;
+
+    }
+
+    .img {
+
+      &-1 {
+        background-image: url("../assets/publication-1.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+      }
+
+      &-2 {
+        background-image: url("../assets/publication-2.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+      }
+
+      &-3 {
+        background-image: url("../assets/publication-3.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+      }
+
+      &-4 {
+        background-image: url("../assets/publication-4.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+      }
+
+      &-5 {
+        background-image: url("../assets/publication-5.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+      }
+
+      &-6 {
+        background-image: url("../assets/publication-6.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+      }
+    }
+
+
+    &-title {
+      color: $color-active-regular;
+      font-weight: $font-bold;
+      margin-bottom: 15px;
+      font-size: $font-sm;
+    }
+
+    &-title:hover {
+      color: $color-accent;
+    }
+
+    &-data {
+      font-size: $font-xm;
+      color: $color-gray-text;
+      margin-bottom: 15px;
+    }
+
+    &-text {
+      color: black;
+      font-size: $font-xm;
+      margin-bottom: 0;
+    }
+
+  }
+
+}

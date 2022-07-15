@@ -1,0 +1,24 @@
+.recommended {
+  @media (max-width: 767px) {
+    &__public {
+      flex-wrap: wrap;
+
+      &-box {
+        flex: 1 1 46%;
+      }
+
+      .last {
+        flex: 1 1 100%;
+      }
+    }
+
+  }
+
+  @media (max-width: 576px) {
+    &__public {
+      &-box {
+        flex: 1 1 100% !important;
+      }
+    }
+  }
+}

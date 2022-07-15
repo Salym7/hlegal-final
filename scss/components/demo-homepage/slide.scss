@@ -1,0 +1,42 @@
+.slide {
+  padding: 60px 0;
+  background: $color-white;
+
+  &__img-avatar {
+    width: 400px;
+    overflow: hidden;
+  }
+
+  .img {
+    width: 100%;
+    height: 100%;
+    background-image: url("../assets/team-1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+  }
+
+  &__col-right {
+    padding: 30px;
+    background: $color-grey-bg;
+  }
+
+  .carousel-inner {
+    border-radius: 12px;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    box-sizing: border-box;
+    border: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: $color-active-regular;
+  }
+
+  .carousel-indicators {
+    margin-bottom: 15px;
+  }
+
+}

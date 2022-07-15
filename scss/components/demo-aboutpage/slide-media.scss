@@ -1,0 +1,32 @@
+.slide {
+  .display-mob {
+    display: none;
+  }
+
+  @media (max-width: 992px) {
+    .display-sd {
+      display: none;
+    }
+  }
+  @media (max-width: 768px) {
+    .carousel-item {
+      &-inner {
+        gap: 30px;
+      }
+
+      .display-sm {
+        display: none;
+      }
+
+    }
+  }
+  @media (max-width: 450px) {
+    .display-xs {
+      display: none;
+    }
+    .display-mob {
+      display: block;
+    }
+  }
+}
+

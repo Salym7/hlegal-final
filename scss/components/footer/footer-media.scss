@@ -1,0 +1,33 @@
+.footer {
+  @media (max-width: 768px) {
+    &__inner {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    &__address, &__copy, &__contact {
+      width: 100%;
+    }
+    &__copy {
+      text-align: center;
+      order: 1;
+    }
+
+    &__contact {
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 450px) {
+    &__address {
+      gap: 10px;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    &__contact {
+      gap: 10px;
+      flex-direction: column;
+    }
+    *:before {
+      display: none
+    }
+  }
+}

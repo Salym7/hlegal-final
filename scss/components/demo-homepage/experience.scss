@@ -1,0 +1,64 @@
+.experience {
+  padding: 60px 0;
+
+  &__flex {
+    gap: 60px;
+  }
+
+  &__col-left {
+    padding: 15px 60px 15px 0;
+    flex: 1 0 440px;
+    border-right: 4px solid rgba(255, 255, 255, 0.3);
+
+
+    &-inner {
+      max-width: 856px;
+      gap: 15px;
+    }
+  }
+
+
+  &__col-right {
+    flex: 1 1 861px;
+    color: $color-white;
+    display: flex;
+    align-items: center;
+    min-height: 300px;
+
+  }
+
+  .nav-pills .nav-link.active {
+    color: transparent;
+    background-image: $color-gradient-title;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  .nav-pills .nav-link.active {
+    color: transparent;
+  }
+
+  .nav-link {
+    text-align: right;
+    font-size: $font-xxl;
+    font-weight: bold;
+    color: $color-gray-text;
+    white-space: nowrap;
+
+    &:not(.active):hover {
+      color: $color-accent;
+    }
+
+  }
+
+  &__title {
+    font-size: $font-xl;
+    font-weight: $font-bold;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    font-size: 19px;
+  }
+
+}

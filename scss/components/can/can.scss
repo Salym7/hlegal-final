@@ -1,0 +1,35 @@
+.can {
+  padding: 60px 0px 60px;
+  color: $color-white;
+  max-width: 1920px;
+  margin: 0 auto 20px;
+
+  &__top {
+    margin-bottom: 60px;
+  }
+
+  &__products {
+
+    &-title {
+      color: $color-active-regular;
+      font-size: $font-lgg;
+      font-weight: $font-bold;
+      line-height: 26.82px;
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    &-title:hover {
+      color: $color-accent;
+      transition: 0.5s;
+    }
+
+    &-text {
+      font-size: $font-sm;
+      line-height: 26px;
+    }
+
+  }
+
+
+}

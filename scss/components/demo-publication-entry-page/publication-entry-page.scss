@@ -1,0 +1,84 @@
+.publication-entry {
+  padding: 176px 0 60px 0;
+
+  &__img {
+    height: 500px;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    background-image: url("../assets/publication-2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+
+
+  &__topic {
+    font-weight: $font-bold;
+    font-size: $font-xl;
+    color: $color-main;
+    margin-bottom: 15px;
+  }
+
+  &__data {
+    font-size: 12px;
+    font-weight: $font-bold;
+    color: $color-gray-text;
+    margin-bottom: 30px;
+  }
+
+  .gray-line {
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    font-size: $font-sm;
+    margin-bottom: 30px;
+  }
+
+  &__sked {
+    font-size: $font-lgg;
+    color: $color-main;
+    font-weight: $font-bold;
+  }
+
+  &__item::marker {
+    color: $color-accent;
+    font-weight: bold;
+  }
+
+  &__ad {
+    max-width: 640px;
+    margin: 0 auto 30px;
+
+    &-img {
+      width: 100%;
+    }
+
+    &-text {
+      font-size: $font-xm;
+      text-align: center;
+      color: $color-gray-text;
+    }
+
+  }
+
+  &__social-list {
+    gap: 10px;
+    padding-left: 0;
+  }
+
+  &__social-item {
+    list-style-type: none;
+    padding: 9px;
+    border-radius: 12px;
+    background: $color-grey-bg;
+    line-height: 1;
+  }
+
+  &__social-item:hover {
+    background: $color-grey-alt;
+    transition: .5s;
+  }
+
+}

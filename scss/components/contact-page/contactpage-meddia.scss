@@ -1,0 +1,48 @@
+.contact {
+  @media (max-width: 1600px) {
+    &__inner {
+      max-width: 1080px;
+    }
+  }
+  @media (max-width: 1024px) and (min-width: 768px) {
+    & {
+      padding-top: 280px;
+    }
+  }
+  @media (max-width: 768px) {
+    &__contact, &__form {
+      width: 100%;
+    }
+  }
+  @media (max-width: 500px) {
+    &__inner {
+      gap: 30px;
+    }
+    & {
+      padding-top: 140px;
+    }
+  }
+
+
+}
+
+.single {
+
+  @media (max-width: 450px) {
+
+    .modal-dialog {
+      margin: 0;
+    }
+    .contact {
+      padding: 0;
+
+      &__form {
+        border-radius: 0;
+        width: 100%;
+        height: 100%;
+
+      }
+    }
+  }
+
+}
